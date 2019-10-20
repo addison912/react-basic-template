@@ -2,7 +2,9 @@ import React from "react";
 
 class App extends React.Component {
   render() {
-    return <div className="App">Hello World</div>;
+    <React.StrictMode>
+      return <div className="App">Hello World</div>;
+    </React.StrictMode>;
   }
 }
 
