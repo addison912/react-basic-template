@@ -3,6 +3,6 @@
 @import "variables";
 
 // components
-@import "components/landing";
-
-//sass --watch sass:src
+@import "components/main";
+@import "components/modal";
+@import "components/uiElements";

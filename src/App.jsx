@@ -3,7 +3,7 @@ import { createHistory, LocationProvider, Router } from "@reach/router";
 import createHashSource from "hash-source";
 
 // Components
-import Home from "./containers/Home";
+import Home from "./containers/Home.jsx";
 
 let source = createHashSource();
 let history = createHistory(source);

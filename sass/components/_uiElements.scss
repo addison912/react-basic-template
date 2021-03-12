@@ -1,0 +1,16 @@
+button:hover,
+select:hover {
+  cursor: pointer;
+}
+
+.button_main,
+.select_main,
+.input_main {
+  margin: 0 12px;
+  height: 32px;
+  padding: 3px;
+  border: solid 1px $color-main;
+  background-color: $color-darker;
+  color: $color-main;
+  outline: none;
+}

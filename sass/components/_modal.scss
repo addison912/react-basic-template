@@ -1,0 +1,26 @@
+#modal {
+  background-color: rgba(0, 0, 0, 0.82);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > div {
+    background-color: white;
+    max-width: 512px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    h1 {
+      color: $color-darkest;
+    }
+  }
+}
+
+#modal:empty {
+  display: none;
+}
