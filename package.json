@@ -4,25 +4,14 @@
   "description": "Starting point for a react frontend",
   "author": "Addison Moore",
   "license": "MIT",
-  "main": "src/index.html",
   "scripts": {
     "dev": "parcel src/index.html",
-    "clear-cache": "rm -rf .cache/ dist/ .parcel-cache/",
+    "clear": "rm -rf .cache/ dist/ .parcel-cache/ ./build",
     "format": "prettier \"src/**/*.{js, html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "start": "nodemon index.js",
     "build": "parcel build --no-cache src/index.html --dist-dir ./build/",
     "sass": "sass --watch sass:src/styles"
-  },
-  "targets": {
-    "default": {
-      "engines": {
-        "browsers": "> 0.25%"
-      },
-      "distDir": "build",
-      "publicUrl": ".",
-      "sourceMap": false
-    }
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^11.2.0",
