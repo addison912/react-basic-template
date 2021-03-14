@@ -8,9 +8,10 @@ select:hover {
 .input_main {
   margin: 0 12px;
   height: 32px;
-  padding: 3px;
+  padding: 3px 6px;
   border: solid 1px $color-main;
   background-color: $color-darker;
   color: $color-main;
   outline: none;
+  border-radius: 4px;
 }

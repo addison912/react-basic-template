@@ -132,11 +132,12 @@ select:hover {
 .input_main {
   margin: 0 12px;
   height: 32px;
-  padding: 3px;
+  padding: 3px 6px;
   border: solid 1px #fafafa;
   background-color: #262012;
   color: #fafafa;
   outline: none;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=index.css.map */

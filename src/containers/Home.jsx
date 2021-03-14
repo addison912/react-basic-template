@@ -7,13 +7,18 @@ const Home = () => {
     <div>
       <h1>Hello World</h1>
       <div className="main">
-        <button onClick={() => setModal(!showModal)}>click here</button>
+        <button className="button_main" onClick={() => setModal(!showModal)}>
+          click here
+        </button>
       </div>
       {showModal ? (
         <Modal>
           <h1>Success comes to those who persist</h1>
           <div className="buttons">
-            <button onClick={() => setModal(!showModal)}>
+            <button
+              className="button_main"
+              onClick={() => setModal(!showModal)}
+            >
               {"Close modal"}
             </button>
           </div>
