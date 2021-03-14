@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
+    "clear-cache": "rm -rf .cache/ dist/",
     "format": "prettier \"src/**/*.{js, html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "start": "nodemon index.js",
     "build": "parcel build src/index.html --out-dir build",
-    "sass": "sass --watch sass:src/styles",
-    "preinstall": "npx npm-force-resolutions"
+    "sass": "sass --watch sass:src/styles"
   },
   "keywords": [],
   "author": "Addison Moore",
@@ -36,10 +36,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.1.2",
-    "parcel-bundler": "^1.12.3",
+    "parcel": "^2.0.0-beta.1",
     "prettier": "^1.18.2"
-  },
-  "resolutions": {
-    "node-forge": "0.10.0"
   }
 }
