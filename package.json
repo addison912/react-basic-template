@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "clear-cache": "rm -rf .cache/ dist/",
+    "clear-cache": "rm -rf .cache/ dist/ .parcel-cache/",
     "format": "prettier \"src/**/*.{js, html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "start": "nodemon index.js",
