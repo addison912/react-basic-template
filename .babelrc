@@ -2,7 +2,17 @@
   "presets": [
     "@babel/preset-react",
     "@babel/preset-env",
+    "@babel/preset-typescript",
     ["@emotion/babel-preset-css-prop", { "sourceMap": false }]
   ],
-  "plugins": ["@babel/plugin-proposal-class-properties"]
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-typescript",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ]
+  ]
 }

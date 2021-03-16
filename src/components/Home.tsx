@@ -1,7 +1,13 @@
-import React, { useState } from "react";
-import Modal from "../components/Modal.jsx";
+import React, { FunctionComponent, useState } from "react";
+import Modal from "./Modal";
 
-const Home = () => {
+interface IProps {
+  path: string;
+  exact: boolean;
+}
+
+// const Home = () => {
+const Home: FunctionComponent<IProps> = () => {
   const [showModal, setModal] = useState(false);
   return (
     <div>
