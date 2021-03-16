@@ -1,13 +1,7 @@
 import React, { FunctionComponent, useState } from "react";
 import Modal from "./Modal";
 
-interface IProps {
-  path: string;
-  exact: boolean;
-}
-
-// const Home = () => {
-const Home: FunctionComponent<IProps> = () => {
+const Home: FunctionComponent = () => {
   const [showModal, setModal] = useState(false);
   return (
     <div>

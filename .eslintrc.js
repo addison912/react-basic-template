@@ -24,6 +24,7 @@ module.exports = {
     "jsx-a11y",
     "react-hooks",
     "@typescript-eslint",
+    "@emotion",
     "prettier"
   ],
   parser: "@typescript-eslint/parser",
