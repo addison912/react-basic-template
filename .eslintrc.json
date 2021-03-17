@@ -14,7 +14,7 @@
     "react-hooks/exhaustive-deps": 1,
     "no-unused-vars": 2
   },
-  "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
+  "plugins": ["react", "import", "jsx-a11y", "react-hooks", "@emotion"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2020,
