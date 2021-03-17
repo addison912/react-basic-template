@@ -1,9 +1,10 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import { createHistory, LocationProvider, Router } from "@reach/router";
 import createHashSource from "hash-source";
 
 // Components
-const Home = lazy(() => import("./containers/Home"));
+// const Home = lazy(() => import("./routes/Home"));
+import Home from "./routes/Home";
 
 let source = createHashSource();
 let history = createHistory(source);
@@ -14,11 +15,11 @@ class App extends React.Component {
       <React.StrictMode>
         <LocationProvider history={history}>
           <div className="App" path="/">
-            <Suspense fallback={<h1>loading ...</h1>}>
-              <Router>
-                <Home path="/" />
-              </Router>
-            </Suspense>
+            {/* <Suspense fallback={<h1>loading ...</h1>}> */}
+            <Router>
+              <Home path="/" />
+            </Router>
+            {/* </Suspense> */}
           </div>
         </LocationProvider>
       </React.StrictMode>
