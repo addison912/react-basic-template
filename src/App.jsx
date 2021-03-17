@@ -1,30 +1,29 @@
 import React from "react";
-import { createHistory, LocationProvider, Router } from "@reach/router";
-import createHashSource from "hash-source";
+import { render } from "react-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { Header } from "./components/Header";
 
 // Components
-// const Home = lazy(() => import("./routes/Home"));
+// const Home = lazy(() => import("./components/Home"));
 import Home from "./routes/Home";
 
-let source = createHashSource();
-let history = createHistory(source);
+const App = () => {
+  return (
+    <React.StrictMode>
+      <div className="App">
+        <Router>
+          {/* <Header /> */}
+          {/* <Suspense fallback={<h1>loading ...</h1>}> */}
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
+          {/* </Suspense> */}
+        </Router>
+      </div>
+    </React.StrictMode>
+  );
+};
 
-class App extends React.Component {
-  render() {
-    return (
-      <React.StrictMode>
-        <LocationProvider history={history}>
-          <div className="App" path="/">
-            {/* <Suspense fallback={<h1>loading ...</h1>}> */}
-            <Router>
-              <Home path="/" />
-            </Router>
-            {/* </Suspense> */}
-          </div>
-        </LocationProvider>
-      </React.StrictMode>
-    );
-  }
-}
-
-export default App;
+render(<App />, document.getElementById("root"));
