@@ -11,7 +11,12 @@
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet",
     "start": "nodemon index.js",
     "build": "parcel build --no-cache src/index.html --dist-dir ./build/",
-    "sass": "sass --watch sass:src/styles"
+    "sass": "sass --watch sass:src/styles",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:update": "jest -u"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -35,6 +40,7 @@
     "@emotion/eslint-plugin": "^11.2.0",
     "@emotion/react": "^11.1.5",
     "@parcel/transformer-typescript-tsc": "^2.0.0-alpha.3",
+    "@testing-library/react": "^11.2.5",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
     "@types/react-router": "^5.1.12",
@@ -49,6 +55,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.1.2",
+    "jest": "^26.6.3",
     "parcel": "^2.0.0-beta.1",
     "prettier": "^1.18.2",
     "typescript": "^4.2.3"
