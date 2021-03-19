@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { render } from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Header } from "./components/Header";
@@ -8,7 +8,7 @@ import { Header } from "./components/Header";
 import OtherRoute from "./components/OtherRoute";
 import Home from "./components/Home";
 
-const App = () => {
+const App: FunctionComponent = () => {
   return (
     <React.StrictMode>
       <div className="App">

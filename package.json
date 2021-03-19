@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel src/index.html",
-    "clear": "rm -rf dist parcel-cache build",
+    "clear": "rm -rf dist .parcel-cache build",
     "format": "prettier \"src/**/*.{js, html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet",
     "start": "nodemon index.js",
