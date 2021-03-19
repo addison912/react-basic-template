@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react";
 import { css, jsx } from "@emotion/react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const headerSyled = css({
   "background-color": "#333333",
