@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-const OtherRoute: FunctionComponent = () => {
+const About: FunctionComponent = () => {
   return (
     <div>
       <h1>Hello Buddy</h1>
@@ -8,4 +8,4 @@ const OtherRoute: FunctionComponent = () => {
   );
 };
 
-export default OtherRoute;
+export default About;

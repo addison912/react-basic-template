@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useState } from "react";
-import Modal from "./Modal";
+import Modal from "../components/Modal";
 
 const Home: FunctionComponent = () => {
   const [showModal, setModal] = useState(false);

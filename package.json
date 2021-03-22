@@ -19,6 +19,7 @@
     "test:update": "jest -u"
   },
   "dependencies": {
+    "@emotion/react": "^11.1.5",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -37,7 +38,6 @@
     "@babel/preset-typescript": "^7.13.0",
     "@emotion/babel-preset-css-prop": "^11.2.0",
     "@emotion/eslint-plugin": "^11.2.0",
-    "@emotion/react": "^11.1.5",
     "@parcel/transformer-typescript-tsc": "^2.0.0-alpha.3",
     "@testing-library/react": "^11.2.5",
     "@types/react": "^17.0.3",

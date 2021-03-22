@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import { css, jsx } from "@emotion/react";
 import { Link } from "react-router-dom";
 
@@ -9,8 +9,8 @@ export const Header: FunctionComponent = () => {
       <Link css={link} to="/">
         Home
       </Link>
-      <Link css={link} to="/other">
-        Other
+      <Link css={link} to="/about">
+        About
       </Link>
     </header>
   );
