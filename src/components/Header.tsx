@@ -20,7 +20,7 @@ const header = css({
   backgroundColor: "#333333",
   padding: "15px",
   marginBottom: "15px",
-  borderRadius: "0 0 5px 5px"
+  borderRadius: "0 0 5px 5px",
 });
 
 const link = css`
