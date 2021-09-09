@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Components
 // const Home = lazy(() => import("./components/Home"));
 import Home from "./routes/Home";
+import LikeDislike from "./routes/LikeDislike";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
           {/* <Suspense fallback={<h1>loading ...</h1>}> */}
           <Switch>
             <Route exact path="/">
-              <Home />
+              {/* <Home /> */}
+              <LikeDislike />
             </Route>
           </Switch>
           {/* </Suspense> */}
