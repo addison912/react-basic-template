@@ -109,3 +109,5 @@ node_modules
 .parcel-cache/*
 .env
 coverage/
+package-lock.json
+
